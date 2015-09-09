@@ -83,7 +83,7 @@ NON-RESPONSIVE START
 .navbar .navbar-nav .open .dropdown-menu > .active > a:hover,
 .navbar .navbar-nav .open .dropdown-menu > .active > a:focus {
   color: #fff !important;
-  background-color: #428bca !important;
+  background-color: #ec3338 !important;
 }
 .navbar .navbar-nav .open .dropdown-menu > .disabled > a,
 .navbar .navbar-nav .open .dropdown-menu > .disabled > a:hover,
@@ -95,11 +95,11 @@ NON-RESPONSIVE START
 NON-RESPONSIVE END
 */
 ::selection {
-  background-color: #812d2a;
+  background-color: #ec3338;
   color: #FFF;
 }
 ::-moz-selection {
-  background-color: #812d2a;
+  background-color: #ec3338;
   color: #FFF;
 }
 small {
@@ -116,7 +116,7 @@ button {
 /*
 FONTS START
 **********************************************************************************************/
-.box-chamada {
+.btn {
   font-family: 'robotoblack', Arial, sans-serif;
   font-weight: normal;
 }
@@ -126,6 +126,18 @@ FONTS END
 /*
 ESTRUTURA START
 **********************************************************************************************/
+.extra-header,
+.extra-central,
+.extra-footer {
+  min-width: 960px;
+}
+.extra-header .navbar {
+  border: 0;
+  margin: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
 /**********************************************************************************************
 ESTRUTURA END
 */
@@ -150,6 +162,16 @@ CLASSES START
   -moz-border-radius: 150px;
   border-radius: 150px;
 }
+.cycle-slideshow li * {
+  white-space: normal;
+}
+.cycle-nav span {
+  display: inline-block;
+  cursor: pointer;
+}
+.form-control {
+  box-shadow: none;
+}
 .imagem {
   display: inline-block;
   overflow: hidden;
@@ -169,6 +191,10 @@ CLASSES START
   vertical-align: middle;
   display: inline-block;
   background-image: url(../imagem/site/ycon.png);
+}
+.pixel {
+  width: 100%;
+  height: 100%;
 }
 .space {
   width: 1%;
