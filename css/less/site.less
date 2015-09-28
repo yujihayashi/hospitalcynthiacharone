@@ -39,10 +39,13 @@ NON-RESPONSIVE END
 small {display: inline-block;line-height: 1.1;}
 textarea {resize:vertical;}
 a, button  {transition: all 0.25s ease 0s;}
+.dotted-white {background: url(../imagem/site/dotted-white.png) repeat-x left center;height: 1px;border:0;}
 /*
 FONTS START
 **********************************************************************************************/
-.btn {font-family: 'robotoblack', Arial, sans-serif;font-weight: normal;}
+.site-header .navbar-nav, .menu-header, .footer-header {font-family: 'GothamBold', Arial, sans-serif;font-weight: normal;}
+.nav-tabs, .box-corpo-clinico .box-title, .box-eventos .plus, .box-eventos .data, .title, .btn, .box-banner strong, .mensagem-footer a, .site-header strong {font-family: 'GothamBlack', Arial, sans-serif;font-weight: normal;}
+.phone-header {font-family: 'GothamThin', Arial, sans-serif;font-weight: normal;}
 /**********************************************************************************************
 FONTS END
 */
@@ -51,14 +54,66 @@ ESTRUTURA START
 **********************************************************************************************/
 .extra-header, .extra-central, .extra-footer {min-width: 960px;}
 .extra-header {
-	.site-header {}
-	.navbar {border:0;margin:0;.border-radius(0);}
+    position: absolute;z-index: 1005;left: 0;top: 30px;right: 0;
+    .site-header {}
+    .navbar {border:0;margin:0;.border-radius(0);}
+    .navbar-header {margin:0;}
+    .navbar-brand, .links-header {height: 80px;}
+    .navbar-brand {margin:0;padding:18px 32px;}
+    .links-header {text-align: right;padding:24px 32px;font-size: 14px;text-transform: uppercase;color: #8c8c8c;}
+    .phone-header {font-size: 22px;}
+    .navbar-nav {
+        font-size: 14px;text-transform: uppercase;width: 100%;text-align: center;
+        > li {
+            float: none;display: inline-block;
+            a {
+                padding:15px 12px;
+                &:hover {text-decoration: underline;}
+            }
+            + li {background: url(../imagem/site/bg-menu-item.png) no-repeat left center;padding-left: 5px;}
+        }
+    }
+    .navbar-line-1 {.border-radius(10px 10px 0 0);}
+    .navbar-line-2 {.border-radius(0 0 10px 10px);}
 }
 .extra-central {
-	.site-central {}
+    position: relative;z-index: 2;
+    .site-central {}
 }
 .extra-footer {
-	.site-footer {}
+    position: relative;z-index: 5;
+    .site-footer {
+        background: url(../imagem/site/bg-footer.png) repeat-x top;padding:42px 0;
+        &, a {color: #FFF;}
+        .symbol-footer {margin:50px auto;display: inline-block;}
+        .menu-footer {
+            > li {float: left;max-width: 168px;line-height: 1;font-size: 14px;text-transform: uppercase;
+                + li {margin-left: 40px;}
+                ul {
+                    > li {
+                        + li {margin-top:14px;}
+                    }
+                }
+            }
+        }
+    }
+    .menu-header {display: block;margin-bottom: 14px;text-transform: uppercase;font-size: 14px;}
+    .site-atendimento {
+        padding:36px 0;
+        .direitos-right {text-align: right;}
+        .frase-footer {line-height: 1.8;font-size: 16px;}
+        .logo-footer {margin:20px 0 20px;}
+        .phone-footer {font-size: 36px;line-height: .8;}
+        .footer-header {font-size: 20px;text-transform: uppercase;color: #818181;margin-bottom: 20px;}
+        .mensagem-footer {font-size: 18px;line-height: 1;text-align: center;display: block;}
+    }
+    .social-footer {
+        font-size: 28px;margin:15px 0;
+        > a, > span {
+            display: inline-block;
+            + a, + span {margin-left: 20px;}
+        }
+    }
 }
 /**********************************************************************************************
 ESTRUTURA END
@@ -69,6 +124,112 @@ CLASSES START
 [class^='lista-'], [class^='lista-'], [class^='menu-'], [class^='menu-'] ul, .cycle-slideshow {list-style:none;margin-bottom:0;padding-left:0;}
 .btn-gray {background: #EEE;color:#C93F2A;}
 .btn-rounded {-webkit-border-radius: 150px;-moz-border-radius: 150px;border-radius: 150px;}
+.btn {text-transform: uppercase;font-size: 15px;padding-left: 22px;padding-right: 22px;}
+
+.box-banner {
+    position: relative;overflow: hidden;
+    &, .cycle-slideshow, .cycle-slideshow li {width: 100%;height: 762px;}
+    .cycle-slideshow {
+        position: relative; z-index: 1;
+        li {background: no-repeat center top;background-size: cover;}
+    }
+    .content {padding:300px 400px 0 30px;}
+    .imagem {margin:0 0 30px;}
+    .frase {font-size: 18px;margin:0px 0 20px;}
+    .cycle-nav {position: absolute;z-index: 2;left: 0;right:0;bottom: 30px;text-align: center;}
+}
+.box-home-1 {
+    background: url(../imagem/site/bg-home-especialidades.jpg) no-repeat center bottom #e2dde0;min-height: 1019px;
+}
+.box-home-2 {
+    background: url(../imagem/site/bg-home-depoimentos.jpg) no-repeat center top;height: 400px;
+}
+.box-home-2 {
+    background: url(../imagem/site/bg-home-depoimentos.jpg) no-repeat center top;height: 400px;
+}
+.box {
+    .box-header {color: #818181;line-height: 1;}
+    .box-title {text-transform: uppercase;font-size: 40px;}
+}
+.box-especialidades {
+    min-height: 578px;text-align: center;padding:72px 0 50px;font-size: 16px;
+    .box-header {margin:0 0 40px;}
+    .subheader {font-size: 20px;}
+    .imagem {
+        width: 77px;height: 77px;.border-radius(150px);background: @primary-color;margin:0 auto 15px;display: block;text-align: center;
+        img {display: inline-block;max-width: 96%;margin-right: -5px;}
+    }
+    .title {text-transform: uppercase;color: #616161;margin:10px 0 20px;font-size: 18px;padding:0 15px;}
+    
+    .plus {width: 40px;height: 40px;text-align: center;padding:8px 0;}
+}
+.box-noticias {
+    height: 440px;
+    .box-header {padding:30px 0 0px;}
+    .plus {width: 40px;height: 40px;text-align: center;padding:8px 0;}
+    .lista-noticias {
+        > li:last-child {padding-bottom: 0;}
+    }
+}
+.box-eventos {
+    height: 220px;
+    .box-header {padding:30px 0 0 160px;}
+    .data {
+        display: block;float: left;width: 160px;text-align: center;color: #fdeccd;text-transform: uppercase;font-size: 13px;line-height: 1;padding:10px 20px 0 0;
+        .data-start, .data-end {display: inline-block;}
+        .day, .month {display: block;}
+        .day {font-size: 36px;}
+    }
+    .texto {float: left;width: 300px;}
+    .title {font-size: 22px;text-transform: uppercase;margin:0;}
+    .desc {background: url(../imagem/site/dotted.png) repeat-x left bottom;padding:10px 0;margin:0 0 10px;}
+    .evento {
+    }
+    .plus {font-size: 14px;text-transform: uppercase;}
+}
+.box-corpo-clinico {
+    padding:0 0 0 70px;position: relative;
+    &, a {color: #FFF;}
+    .box-header {position: absolute;left: 302px;top:0;padding:15px 0 10px 15px;background: url(../imagem/site/dotted-white.png) repeat-x bottom left;min-width: 180px;}
+    .box-title {font-size: 14px;text-transform: uppercase;color: #FFF;}
+    .box-content {background: rgba(215, 0, 0, .8);.border-radius(0 30px 0 0);}
+    .imagem {width: 230px;height: 220px;overflow: hidden;background: no-repeat center top;background-size:cover;display: block;}
+    .pull-left {padding-right: 15px;}
+    .media-body {padding:55px 15px 0 0;}
+    .title {text-transform: uppercase;font-size: 26px;}
+    .desc {line-height: 1;margin:0 0 5px;}
+    .plus {.border-radius(150px);width: 40px;height: 40px;background: rgba(255, 255, 255, .9);display: block;text-align: center;padding:8px 0;}
+}
+.box-depoimentos {
+    background: url(../imagem/site/bg-home-depoimentos.jpg) no-repeat center top;height: 350px;
+    &, a, .media-heading {color: #FFF;}
+    .box-header {padding:48px 0 0 266px;}
+    .box-content {padding:12px 0 0 266px;font-size: 16px;line-height: 1.6;position: relative;}
+    .title, .desc {font-size: 14px;line-height: 1;}
+    .imagem {display: block;width: 73px;height: 73px;overflow: hidden;.border-radius(150px);border:7px solid #f2f0eb;}
+    .navegacao {
+        position: absolute;left: 175px;bottom:28px;text-align: center;width: 20px;
+        .cycle-nav {
+            padding:40px 0;width: 100%;
+            span {
+                background: url(../imagem/site/cycle-nav-white.png) no-repeat left top;height: 13px;width: 13px;
+                + span {margin:0;}
+                &.cycle-pager-active {background-position: right top;}
+            }
+        }
+        .cycle-prev, .cycle-next {position: absolute;left: 0;display: inline-block;line-height: 1;}
+        .cycle-prev {top: 0;}
+        .cycle-next {bottom: 0;}
+    }
+}
+.box-unidades {
+    background: url(../imagem/site/bg-home-unidades.jpg) no-repeat center top;height: 1192px;margin:0 0 -220px;text-align: center;
+    .box-header {
+        padding:46px 0 30px;
+        .subheader {font-size: 18px;}
+        &, a, .media-heading {color: #FFF;}
+    }
+}
 
 .cycle-slideshow {
     li {
@@ -76,7 +237,33 @@ CLASSES START
     }
 }
 .cycle-nav {
-	span {display: inline-block;cursor: pointer;}
+	span {
+        display: inline-block;cursor: pointer;width: 15px;height: 15px;background: url(../imagem/site/cycle-nav.png) no-repeat left top;text-indent: -1000px;text-align: left;overflow: hidden;
+        + span {margin-left: 15px;}
+        &.cycle-pager-active {background-position: right top;}
+    }
+}
+.cycle-unidades {
+    position: relative;background: rgba(255, 255, 255, .4);padding:10px 5px;.border-radius(25px);width: 820px;margin:36px auto 0;
+    .cycle-slideshow {
+        position: relative;z-index: 1;
+        li {width: 270px;}
+    }
+    .content {
+        position: relative;margin:0 auto;padding:0 0 66px;height: 440px;width: 260px;background: #FFF;.border-radius(20px);overflow: hidden;
+        .imagem {display: block;width: 100%;height: 190px;background: no-repeat center;background-size: cover;position: relative;z-index: 1;margin:0 0 36px;}
+        .marker {position: absolute;z-index: 2;left: 50%;margin-left: -25px;top:148px;}
+        .title, .category, .address, .phone {padding-left:18px;padding-right: 18px;}
+        .title {font-size: 16px;text-transform: uppercase;display: block;line-height: 1;margin:0 0 5px;}
+        .category {font-size: 15px;text-transform: uppercase;}
+        .trace {display: inline-block;background: #e3e2de;width: 20px;height: 1px;margin:6px 0;}
+        .address {margin:0 0 5px;line-height: 1;}
+        .phone {line-height: 1;}
+        .plus {position: absolute;bottom:0;left: 50%;margin-left: -30px;width: 47px;height: 60px;.border-radius(50px 50px 0 0);background: #f9c1c3;display: block;text-align: center;padding-top:15px;}
+    }
+    .cycle-prev, .cycle-next {position: absolute;top: 50%;margin-top:-25px;}
+    .cycle-prev {left:-49px;}
+    .cycle-next {right:-49px;}
 }
 
 .form-control {box-shadow:none;}
@@ -85,6 +272,42 @@ CLASSES START
 .imagem-rounded {-webkit-border-radius: 150px;-moz-border-radius: 150px;border-radius: 150px;}
 .inline-block {display:inline-block;}
 [class^='ycon-'], [class*='ycon-'] {background-repeat:no-repeat;vertical-align:middle;display:inline-block;background-image:url(../imagem/site/ycon.png);}
+
+.nav-tabs {
+    width: 100%;text-align: center;
+    > li {
+        display: inline-block;position: relative;z-index: 1;float:none;
+        + li {margin-left: -20px;}
+        a, a:hover, a:active, a:focus {border:5px solid #e1f3ff;background: none;padding:8px 25px;transition:none;position: relative;}
+        .arrow {position: absolute;left: 50%;margin-left:-7px;bottom:-20px;display: none;}
+        a:hover {text-decoration: underline;}
+        &.active {
+            z-index: 2;
+            a, a:hover, a:active, a:focus {border:0;padding-top:14px;padding-bottom:14px;}
+            .arrow {display: block;}
+        }
+    }
+    > li, > li.active {
+        text-transform: uppercase;
+        a, a:hover, a:active, a:focus {
+            .border-radius(150px);color: #FFF;font-size: 16px;height: 50px;
+        }
+    }
+}
+
+.lista-noticias {
+    > li {
+        padding:15px 0;
+        + li {background: url(../imagem/site/dotted.png) repeat-x left top;margin:0;}
+    }
+    .imagem {
+        display: block;width: 132px;height: 132px;position: relative;overflow: hidden;background:no-repeat center;background-size: cover;
+        img {position: relative;z-index: 1;}
+        .mask {display: block;position: absolute;z-index: 2;left: 0;top: 0;right: 0;bottom: 0;background: url(../imagem/site/noticia-mask.png) no-repeat center;}
+    }
+    .title {display: block;font-size: 16px;}
+    .data {font-size: 14px;color: #737373;text-transform: uppercase;}
+}
 
 
 .pixel {width: 100%;height: 100%;}

@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
 	<meta charset="UTF-8">
-	<title>Projeto</title>
+	<title>Hospital Cynthia Charone</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=960, user-scalable=yes">
 	<link rel="shortcut icon" href="/imagem/favicon.png" type="image/png" />
@@ -16,6 +16,7 @@
 	<meta property="og:site_name" content="" />
 	<meta property="og:type" content="website" />
 	<link rel="stylesheet" href="/library/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/css/font-awesome.min.css">
 	<link rel="stylesheet" href="/fonts/stylesheet.css">
 	<link rel="stylesheet" href="/imagem/site/ycon.css">
 	<link rel="stylesheet" href="/css/site.css">
@@ -35,75 +36,492 @@
 			<header class="extra-header">
 				<div class="site-header">
 					<div class="container">
-						<nav class="navbar navbar-default" role="navigation">
-							<div class="navbar-header">
-								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-									<span class="sr-only">Toggle navigation</span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-								</button>
-								<a class="navbar-brand" href="/" title="Voltar para a página inicial">Title</a>
-							</div>
-							<div class="collapse navbar-collapse navbar-ex1-collapse">
-								<ul class="nav navbar-nav">
-									<li class="active"><a href="#">Link</a></li>
-									<li><a href="#">Link</a></li>
-								</ul>
-								<form class="navbar-form navbar-left" role="search">
-									<div class="form-group">
-										<input type="text" class="form-control" placeholder="Search">
+						<nav class="navbar navbar-default navbar-line-1" role="navigation">
+							<div class="row">
+								<div class="col-xs-4">
+
+									<div class="navbar-header">
+										<a class="navbar-brand" href="/" title="Voltar para a página inicial"><img src="/imagem/site/hospital-cynthia-charone.png" alt="Logo Hospital Cynthia Charone"></a>
 									</div>
-									<button type="submit" class="btn btn-default">Submit</button>
-								</form>
-								<ul class="nav navbar-nav navbar-right">
-									<li><a href="#">Link</a></li>
-									<li class="dropdown">
-										<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-										<ul class="dropdown-menu">
-											<li><a href="#">Action</a></li>
-											<li><a href="#">Another action</a></li>
-											<li><a href="#">Something else here</a></li>
-											<li><a href="#">Separated link</a></li>
-										</ul>
-									</li>
-								</ul>
-							</div><!-- /.navbar-collapse -->
+								</div> <!-- .col-xs-4 -->
+								<div class="col-xs-8">
+									<div class="links-header">
+										<strong>Ligue para nós:</strong> <span class="phone-header">91. 3085 0817</span>
+									</div>
+								</div> <!-- .col-xs-8 -->
+							</div> <!-- .row -->
+
+						</nav>
+						<nav class="navbar navbar-inverse navbar-line-2" role="navigation">
+							<ul class="nav navbar-nav">
+								<li><a href="/">Home</a></li>
+								<li><a href="#">O hospital</a></li>
+								<li><a href="#">Serviços</a></li>
+								<li><a href="#">Unidades</a></li>
+								<li><a href="#">Notícias</a></li>
+								<li><a href="#">Multimídia</a></li>
+								<li><a href="#">Eventos</a></li>
+								<li><a href="#">Atendimento</a></li>
+							</ul>
 						</nav>
 					</div> <!-- .container -->
 				</div> <!-- .site-header -->
 			</header> <!-- .extra-header -->
 			<div class="extra-central">
 				<div class="site-central" id="content">
-					<div class="container">
-						<div class="box-banner">
-							<div class="cycle-btn">
+					<div class="box-banner">
+						<ul class="cycle-slideshow" data-cycle-fx="scrollHorz" data-cycle-timeout="5000" data-cycle-speed="1800" data-cycle-slides="> li" data-cycle-pager=".box-banner .cycle-nav" data-cycle-next=".box-banner .cycle-next" data-cycle-prev=".box-banner .cycle-prev" data-cycle-easing="easeInOutExpo" data-cycle-log="false" data-cycle-swipe="true">
+							<li style="background-image:url(/imagem/site/banner/programa-viver-bem.jpg);">
 								<div class="container">
-									<a href="javascript:void(0);" class="cycle-prev"><span class="icone-nav-left"></span><span class="sr-only">Banner anterior</span></a>
-									<a href="javascript:void(0);" class="cycle-next"><span class="icone-nav-right"></span><span class="sr-only">Próximo banner</span></a>
-
-									<div class="cycle-nav"></div> <!-- .cycle-nav -->
+									<div class="content">
+										<div class="imagem"><img src="/imagem/site/programa-viver-bem.png" alt=""></div>
+										<div class="frase">
+											Conheça as atividades voltadas para a melhor 
+											idade realizadas pelo <strong>Programa Viver Mais</strong>
+										</div>
+										<a href="#" title="Saiba mais" class="btn btn-primary btn-rounded">Saiba mais</a>
+									</div> <!-- .content -->
 								</div> <!-- .container -->
-							</div> <!-- .cycle-btn -->
-							<ul class="cycle-slideshow" data-cycle-fx="scrollHorz" data-cycle-timeout="5000" data-cycle-speed="1800" data-cycle-slides="> li" data-cycle-pager=".box-banner .cycle-nav" data-cycle-next=".box-banner .cycle-next" data-cycle-prev=".box-banner .cycle-prev" data-cycle-easing="easeInOutExpo" data-cycle-log="false" data-cycle-swipe="true">
-								<li>
-									banner 01
-								</li>
-								<li>
-									banner 01
-								</li>
-							</ul>
-						</div> <!-- .box-banner -->
-					</div> <!-- .container -->
+							</li>
+							<li style="background-image:url(/imagem/site/banner/programa-viver-bem.jpg);">
+								<div class="container">
+									<div class="content">
+										<div class="imagem"><img src="/imagem/site/programa-viver-bem.png" alt=""></div>
+										<div class="frase">
+											Conheça as atividades voltadas para a melhor 
+											idade realizadas pelo <strong>Programa Viver Mais</strong>
+										</div>
+										<a href="#" title="Saiba mais" class="btn btn-primary btn-rounded">Saiba mais</a>
+									</div> <!-- .content -->
+								</div> <!-- .container -->
+							</li>
+						</ul>
+						<div class="cycle-nav"></div> <!-- .cycle-nav -->
+					</div> <!-- .box-banner -->
+					<div class="box-home-1">
+						<div class="container">
+							<div class="box box-especialidades">
+								<div class="box-header">
+									<h2 class="media-heading box-title">Especialidades</h2>
+									<div class="subheader">
+										Conheça as especialidades médicas e serviços oferecidos
+									</div> <!-- .subheader -->
+								</div> <!-- .box-header -->
+								<div class="box-content">
+									<div class="row">
+										<div class="col-xs-3 especialidade">
+											<div class="imagem">
+												<img src="/imagem/site/especialidade/atividades-fisicas.png" alt="">
+												<span class="space"></span>
+											</div> <!-- .imagem -->
+											<h3 class="title">Atividades físicas</h3>
+											<div class="desc">
+												Fisioterapia
+											</div> <!-- .desc -->
+										</div> <!-- .col-xs-3.especialidade -->
+										<div class="col-xs-3 especialidade">
+											<div class="imagem">
+												<img src="/imagem/site/especialidade/atividades-cognitivas.png" alt="">
+												<span class="space"></span>
+											</div> <!-- .imagem -->
+											<h3 class="title">Atividades cognitivas</h3>
+											<div class="desc">
+												Psicoterapia em grupo
+											</div> <!-- .desc -->
+										</div> <!-- .col-xs-3.especialidade -->
+										<div class="col-xs-3 especialidade">
+											<div class="imagem">
+												<img src="/imagem/site/especialidade/atividades-lazer.png" alt="">
+												<span class="space"></span>
+											</div> <!-- .imagem -->
+											<h3 class="title">Atividades de lazer</h3>
+											<div class="desc">
+												Dança
+											</div> <!-- .desc -->
+										</div> <!-- .col-xs-3.especialidade -->
+										<div class="col-xs-3 especialidade">
+											<div class="imagem">
+												<img src="/imagem/site/especialidade/atividades-extras.png" alt="">
+												<span class="space"></span>
+											</div> <!-- .imagem -->
+											<h3 class="title">Atividades extras</h3>
+											<div class="desc">
+												Informática
+											</div> <!-- .desc -->
+										</div> <!-- .col-xs-3.especialidade -->
+									</div> <!-- .row -->
+									<br>
+									<div class="text-center">
+										<a href="#" class="plus btn btn-primary btn-rounded"><span class="ycon-plus-white"></span></a>
+									</div>
+								</div> <!-- .box-content -->
+							</div> <!-- .box-especialidades -->
+							<div class="row">
+								<div class="col-xs-5">
+									<div class="box box-noticias">
+										<div class="box-header">
+											<h2 class="media-heading box-title">Notícias</h2>
+										</div> <!-- .box-header -->
+										<div class="box-content">
+											<ul class="lista-noticias media-list">
+												<li class="media">
+													<span class="pull-left"><span class="imagem" style="background-image:url(/imagem/site/noticia-01.jpg);"><span class="mask"></span><img src="/imagem/site/pixel.gif" class="pixel" alt="pixel"></span></span>
+													<div class="media-body">
+														<span class="data">09.Nov 2015</span>
+														<a href="/noticia/" class="title">Segue novo rumo de ampliação dos serviços de saúde e lazer</a>
+													</div> <!-- .media-body -->
+												</li>
+												<li class="media">
+													<span class="pull-left"><span class="imagem" style="background-image:url(/imagem/site/noticia-01.jpg);"><span class="mask"></span><img src="/imagem/site/pixel.gif" class="pixel" alt="pixel"></span></span>
+													<div class="media-body">
+														<span class="data">09.Nov 2015</span>
+														<a href="/noticia/" class="title">Segue novo rumo de ampliação dos serviços de saúde e lazer</a>
+													</div> <!-- .media-body -->
+												</li>
+											</ul>
+											<div class="text-center">
+												<a href="#" class="plus btn btn-primary btn-rounded"><span class="ycon-plus-white"></span></a>
+											</div>
+										</div> <!-- .box-content -->
+									</div> <!-- .box-noticias -->
+								</div> <!-- .col-xs-5 -->
+								<div class="col-xs-7">
+									<div class="box box-eventos">
+										<div class="box-header">
+											<h2 class="media-heading box-title">Eventos</h2>
+										</div> <!-- .box-header -->
+										<div class="box-content">
+											<ul class="cycle-slideshow">
+												<li class="evento">
+													<div class="content clearfix">
+														<span class="data">
+															<span class="data-start">
+																<span class="day">12</span>
+																<span class="month">nov.15</span>
+															</span>
+															<span class="data-end">
+																<span class="day">12</span>
+																<span class="month">nov.15</span>
+															</span>
+														</span>
+														<div class="texto">
+															<h3 class="title"><a href="#" title="Veja mais detalhes">Caminhada da melhor idade</a></h3>
+															<div class="desc">
+																Local: Clínica Cynthia Charone
+															</div> <!-- .desc -->
+															<a href="#" class="plus pull-left" title="Veja mais detalhes">+ detalhes</a>
+															<a href="#" class="plus pull-right">Todos</a>
+														</div> <!-- .texto -->
+													</div> <!-- .content -->
+												</li>
+											</ul>
+											<a href="javascript:void(0);" class="cycle-prev"><span class="sr-only">Anterior</span><span class="ycon-arrow-up-white"></span></a>
+											<a href="javascript:void(0);" class="cycle-next"><span class="sr-only">Próximo</span><span class="ycon-arrow-down-white"></span></a>
+										</div> <!-- .box-content -->
+									</div> <!-- .box-eventos -->
+									<div class="box box-corpo-clinico">
+										<div class="box-header">
+											<h2 class="media-heading box-title">Corpo clínico</h2>
+										</div> <!-- .box-header -->
+										<div class="box-content">
+											<div class="media">
+												<span class="pull-left">
+													<span class="imagem" style="background-image:url(/imagem/site/corpo-clinico-01.jpg);"><img src="/imagem/site/pixel.gif" alt="" class="pixel"></span>
+												</span>
+												<div class="media-body">
+													<h3 class="media-heading title"><a href="#" title="Saiba mais">Gilberto Azevedo</a></h3>
+													<div class="desc">
+														Oftalmologista e Cirurgião Ocular
+													</div> <!-- .desc -->
+													<a href="#" class="plus" title="Saiba mais"><span class="sr-only">Saiba mais</span><span class="ycon-plus"></span></a>
+												</div> <!-- .media-body -->
+											</div> <!-- .media -->
+										</div> <!-- .box-content -->
+									</div> <!-- .box-corpo-clinico -->
+								</div> <!-- .col-xs-7 -->
+							</div> <!-- .row -->
+						</div> <!-- .container -->
+					</div> <!-- .box-home-1 -->
+					<div class="box-home-2 box box-depoimentos">
+						<div class="container">
+							<div class="box-header">
+								<h2 class="media-heading box-title">Depoimentos</h2>
+							</div> <!-- .box-header -->
+							<div class="box-content">
+								<ul class="cycle-slideshow" data-cycle-fx="scrollVert" data-cycle-timeout="5000" data-cycle-speed="1800" data-cycle-slides="> li" data-cycle-pager=".box-depoimentos .cycle-nav" data-cycle-next=".box-depoimentos .cycle-next" data-cycle-prev=".box-depoimentos .cycle-prev" data-cycle-easing="easeInOutExpo" data-cycle-log="false" data-cycle-swipe="true" data-cycle-reverse="false">
+									<li>
+										<div class="content">
+											<div class="texto">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+											</div> <!-- .texto -->
+											<div class="media">
+												<span class="pull-left"><span class="imagem"><img src="/imagem/site/depoimento-01.jpg" alt=""></span></span>
+												<div class="media-body">
+													<h3 class="title">JOSÉ MARIA COLARES</h3>
+													<div class="desc">
+														Participante do Programa Viver Bem
+													</div> <!-- .desc -->
+												</div> <!-- .media-body -->
+											</div> <!-- .media -->
+										</div> <!-- .content -->
+									</li>
+									<li>
+										<div class="content">
+											<div class="texto">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+											</div> <!-- .texto -->
+											<div class="media">
+												<span class="pull-left"><span class="imagem"><img src="/imagem/site/depoimento-01.jpg" alt=""></span></span>
+												<div class="media-body">
+													<h3 class="title">JOSÉ MARIA COLARES</h3>
+													<div class="desc">
+														Participante do Programa Viver Bem
+													</div> <!-- .desc -->
+												</div> <!-- .media-body -->
+											</div> <!-- .media -->
+										</div> <!-- .content -->
+									</li>
+									<li>
+										<div class="content">
+											<div class="texto">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+											</div> <!-- .texto -->
+											<div class="media">
+												<span class="pull-left"><span class="imagem"><img src="/imagem/site/depoimento-01.jpg" alt=""></span></span>
+												<div class="media-body">
+													<h3 class="title">JOSÉ MARIA COLARES</h3>
+													<div class="desc">
+														Participante do Programa Viver Bem
+													</div> <!-- .desc -->
+												</div> <!-- .media-body -->
+											</div> <!-- .media -->
+										</div> <!-- .content -->
+									</li>
+								</ul>
+								<div class="navegacao">
+									<a href="javascript:void(0);" class="cycle-prev"><span class="sr-only">Anterior</span><span class="ycon-arrow-up-white"></span></a>
+									<a href="javascript:void(0);" class="cycle-next"><span class="sr-only">Próximo</span><span class="ycon-arrow-down-white"></span></a>
+									<div class="cycle-nav"></div>
+								</div> <!-- .navegacao -->
+							</div> <!-- .box-content -->
+						</div> <!-- .container -->
+					</div> <!-- .box-home-2 -->
+					<div class="box-home-3 box box-unidades">
+						<div class="container">
+							<div class="box-header">
+								<h2 class="media-heading box-title">Unidades</h2>
+								<div class="subheader">
+									Conheça as unidades de atendimento do Hospital Cynthia Charone
+								</div> <!-- .subheader -->
+							</div> <!-- .box-header -->
+							<div class="box-content">
+								<div role="tabpanel">
+									<ul class="nav nav-tabs" role="tablist">
+										<li role="presentation" class="active">
+											<a href="#unidades-clinicas" aria-controls="unidades-clinicas" role="tab" data-toggle="tab">Clínicas <span class="ycon-arrow-down arrow"></span></a>
+										</li>
+										<li role="presentation">
+											<a href="#unidades-programa-viver-bem" aria-controls="unidades-programa-viver-bem" role="tab" data-toggle="tab">Programa Viver Bem <span class="ycon-arrow-down arrow"></span></a>
+										</li>
+									</ul>
+									<div class="tab-content">
+										<div role="tabpanel" class="tab-pane active" id="unidades-clinicas">
+											<div class="cycle-unidades">
+												<ul class="cycle-slideshow" data-cycle-fx="carousel" data-cycle-timeout="5000" data-cycle-speed="1800" data-cycle-slides="> li" data-cycle-pager="#unidades-clinicas .cycle-nav" data-cycle-next="#unidades-clinicas .cycle-next" data-cycle-prev="#unidades-clinicas .cycle-prev" data-cycle-easing="easeInOutExpo" data-cycle-log="false" data-cycle-swipe="true">
+													<li>
+														<div class="content">
+															<a href="#" class="imagem" title="Saiba mais sobre esta unidade" style="background-image:url(/imagem/site/unidade-01.jpg);"><img src="/imagem/site/pixel.gif" alt="pixel" class="pixel"></a>
+															<span class="ycon-marker marker"></span>
+															<a href="#" class="title" title="Saiba mais sobre esta unidade">Hospital Cynthia Charone</a>
+															<div class="category">Clínica</div>
+															<span class="trace"></span>
+															<div class="address">Av. Governador José Malcher, 203, Belém - PA</div>
+															<div class="phone"><span class="ycon-phone-sm"></span> 91. 3085 0817</div>
+															<a href="#" class="plus" title="Saiba mais sobre esta unidade"><span class="ycon-plus-white"></span></a>
+														</div> <!-- .content -->
+													</li>
+													<li>
+														<div class="content">
+															<a href="#" class="imagem" title="Saiba mais sobre esta unidade" style="background-image:url(/imagem/site/unidade-01.jpg);"><img src="/imagem/site/pixel.gif" alt="pixel" class="pixel"></a>
+															<span class="ycon-marker marker"></span>
+															<a href="#" class="title" title="Saiba mais sobre esta unidade">Hospital Cynthia Charone</a>
+															<div class="category">Clínica</div>
+															<span class="trace"></span>
+															<div class="address">Av. Governador José Malcher, 203, Belém - PA</div>
+															<div class="phone"><span class="ycon-phone-sm"></span> 91. 3085 0817</div>
+															<a href="#" class="plus" title="Saiba mais sobre esta unidade"><span class="ycon-plus-white"></span></a>
+														</div> <!-- .content -->
+													</li>
+													<li>
+														<div class="content">
+															<a href="#" class="imagem" title="Saiba mais sobre esta unidade" style="background-image:url(/imagem/site/unidade-01.jpg);"><img src="/imagem/site/pixel.gif" alt="pixel" class="pixel"></a>
+															<span class="ycon-marker marker"></span>
+															<a href="#" class="title" title="Saiba mais sobre esta unidade">Hospital Cynthia Charone</a>
+															<div class="category">Clínica</div>
+															<span class="trace"></span>
+															<div class="address">Av. Governador José Malcher, 203, Belém - PA</div>
+															<div class="phone"><span class="ycon-phone-sm"></span> 91. 3085 0817</div>
+															<a href="#" class="plus" title="Saiba mais sobre esta unidade"><span class="ycon-plus-white"></span></a>
+														</div> <!-- .content -->
+													</li>
+													<li>
+														<div class="content">
+															<a href="#" class="imagem" title="Saiba mais sobre esta unidade" style="background-image:url(/imagem/site/unidade-01.jpg);"><img src="/imagem/site/pixel.gif" alt="pixel" class="pixel"></a>
+															<span class="ycon-marker marker"></span>
+															<a href="#" class="title" title="Saiba mais sobre esta unidade">Hospital Cynthia Charone</a>
+															<div class="category">Clínica</div>
+															<span class="trace"></span>
+															<div class="address">Av. Governador José Malcher, 203, Belém - PA</div>
+															<div class="phone"><span class="ycon-phone-sm"></span> 91. 3085 0817</div>
+															<a href="#" class="plus" title="Saiba mais sobre esta unidade"><span class="ycon-plus-white"></span></a>
+														</div> <!-- .content -->
+													</li>
+												</ul>
+												<a href="javascript:void(0);" class="cycle-prev"><span class="sr-only">Anterior</span><span class="ycon-arrow-left-white"></span></a>
+												<a href="javascript:void(0);" class="cycle-next"><span class="sr-only">Próximo</span><span class="ycon-arrow-right-white"></span></a>
+											</div> <!-- .cycle-unidades -->
+										</div> <!-- #unidades-clinicas -->
+										<div role="tabpanel" class="tab-pane" id="unidades-programa-viver-bem">
+											<div class="cycle-unidades">
+												<ul class="cycle-slideshow" data-cycle-fx="carousel" data-cycle-timeout="5000" data-cycle-speed="1800" data-cycle-slides="> li" data-cycle-pager="#unidades-programa-viver-bem .cycle-nav" data-cycle-next="#unidades-programa-viver-bem .cycle-next" data-cycle-prev="#unidades-programa-viver-bem .cycle-prev" data-cycle-easing="easeInOutExpo" data-cycle-log="false" data-cycle-swipe="true">
+													<li>
+														<div class="content">
+															<a href="#" class="imagem" title="Saiba mais sobre esta unidade" style="background-image:url(/imagem/site/unidade-01.jpg);"><img src="/imagem/site/pixel.gif" alt="pixel" class="pixel"></a>
+															<span class="ycon-marker marker"></span>
+															<a href="#" class="title" title="Saiba mais sobre esta unidade">Hospital Cynthia Charone</a>
+															<div class="category">Programa Viver Bem</div>
+															<span class="trace"></span>
+															<div class="address">Av. Governador José Malcher, 203, Belém - PA</div>
+															<div class="phone"><span class="ycon-phone-sm"></span> 91. 3085 0817</div>
+															<a href="#" class="plus" title="Saiba mais sobre esta unidade"><span class="ycon-plus-white"></span></a>
+														</div> <!-- .content -->
+													</li>
+													<li>
+														<div class="content">
+															<a href="#" class="imagem" title="Saiba mais sobre esta unidade" style="background-image:url(/imagem/site/unidade-01.jpg);"><img src="/imagem/site/pixel.gif" alt="pixel" class="pixel"></a>
+															<span class="ycon-marker marker"></span>
+															<a href="#" class="title" title="Saiba mais sobre esta unidade">Hospital Cynthia Charone</a>
+															<div class="category">Programa Viver Bem</div>
+															<span class="trace"></span>
+															<div class="address">Av. Governador José Malcher, 203, Belém - PA</div>
+															<div class="phone"><span class="ycon-phone-sm"></span> 91. 3085 0817</div>
+															<a href="#" class="plus" title="Saiba mais sobre esta unidade"><span class="ycon-plus-white"></span></a>
+														</div> <!-- .content -->
+													</li>
+												</ul>
+												<a href="javascript:void(0);" class="cycle-prev"><span class="sr-only">Anterior</span><span class="ycon-arrow-left-white"></span></a>
+												<a href="javascript:void(0);" class="cycle-next"><span class="sr-only">Próximo</span><span class="ycon-arrow-right-white"></span></a>
+											</div> <!-- .cycle-unidades -->
+										</div> <!-- #unidades-programa-viver-bem -->
+									</div> <!-- .tab-content -->
+								</div> <!-- .tabpanel -->
+							</div> <!-- .box-content -->
+						</div> <!-- .container -->
+					</div> <!-- .box-home-3 -->
 				</div> <!-- .site-central -->
 			</div> <!-- .extra-central -->
 			<footer>
 				<div class="extra-footer">
 					<div class="site-footer">
-						<div class="container">
-							<a href="http://www.libradesign.com.br" target="_blank" title="Libra Design"><img src="/imagem/site/libra.png" alt="Logotipo Libra Design +Tech"></a>
+						<div class="container">	
+							<div class="row">
+								<div class="col-xs-3 text-center">
+									<img src="/imagem/site/hospital-cynthia-charone-symbol.png" alt="Marca do Hospital Cynthia Charone" class="symbol-footer">
+								</div> <!-- .col-xs-3 -->
+								<div class="col-xs-9">
+									<a href="/" class="menu-header"><i class="ycon-favicon-white"></i> Home</a>
+									<hr class="dotted-white">
+									<ul class="menu-footer">
+										<li>
+											<span class="menu-header">Institucional</span>
+											<ul>
+												<li><a href="#">O hospital</a></li>
+												<li><a href="#">Estrutura</a></li>
+												<li><a href="#">Equipe Médica</a></li>
+												<li><a href="#">Unidades</a></li>
+												<li><a href="#">Responsabilidade Social</a></li>
+											</ul>
+										</li>
+										<li>
+											<span class="menu-header">Serviços</span>
+											<ul>
+												<li><a href="#">Especialidades</a></li>
+												<li><a href="#">Exames e consultas</a></li>
+												<li><a href="#">Programa de Atenção ao Idoso</a></li>
+											</ul>
+										</li>
+										<li>
+											<span class="menu-header">Conteúdo</span>
+											<ul>
+												<li><a href="#">Notícias</a></li>
+												<li><a href="#">Eventos</a></li>
+												<li><a href="#">Multimídia</a></li>
+											</ul>
+										</li>
+										<li>
+											<span class="menu-header">Atendimento</span>
+											<ul>
+												<li><a href="#">Fale conosco</a></li>
+												<li><a href="#">FAQ</a></li>
+											</ul>
+										</li>
+									</ul>
+								</div> <!-- .col-xs-9 -->
+							</div> <!-- .row -->
 						</div> <!-- .container -->
 					</div> <!-- .site-footer -->
+					<div class="site-atendimento">
+						<div class="container">
+							<div class="row">
+								<div class="col-xs-5">
+									<img src="/imagem/site/hospital-cynthia-charone.png" alt="Logo Hospital Cynthia Charone" class="logo-footer">
+									<div class="frase-footer">
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+										</p>
+									</div>
+								</div> <!-- .col-xs-5 -->
+								<div class="col-xs-5 ">
+									<h2 class="footer-header">Atendimento</h2>
+									<ul class="media-list">
+										<li class="media">
+											<span class="pull-left"> <i class="ycon-phone-gray-sm"></i> </span>
+											<div class="media-body">
+												<span class="phone-footer">91. 3085 0817</span>
+											</div>
+										</li>
+										<li class="media">
+											<span class="pull-left"> <i class="ycon-mail-gray-sm"></i> </span>
+											<div class="media-body">
+												<a href="mailto:atendimento@hospitalcynthiacharone.com" title="Envie-nos um e-mail!">atendimento@hospitalcynthiacharone.com</a>
+											</div>
+										</li>
+									</ul>
+									<div class="social-footer">
+										<a href="#" title="Acesse nosso Facebook" target="_blank"><span class="sr-only">Facebook</span><i class="fa fa-facebook"></i></a>
+										<a href="#" title="Acesse nosso Instagram" target="_blank"><span class="sr-only">Instagram</span><i class="fa fa-instagram"></i></a>
+										<a href="#" title="Acesse nosso Twitter" target="_blank"><span class="sr-only">Twitter</span><i class="fa fa-twitter"></i></a>
+									</div>
+								</div> <!-- .col-xs-5 -->
+								<div class="col-xs-2">
+									<div class="mensagem-footer">
+										<i class="ycon-mail-lg"></i>
+										<span>Envie sua</span>
+										<a href="#" title="Entre em contato conosco!">Mensagem</a>
+									</div> <!-- .mensagem-footer -->
+								</div> <!-- .col-xs-2 -->
+							</div> <!-- .row -->
+							<hr>
+							<div class="row">
+								<div class="col-xs-6 direitos-left">
+									<small class="text-muted">Copyright  2015.  Hospital Cynthia Charone. Direitos Reservados</small>
+								</div> <!-- .col-xs-6 -->
+								<div class="col-xs-6 direitos-right">
+									<a href="http://www.libradesign.com.br" target="_blank" title="Libra Design"><img src="/imagem/site/libra.png" alt="Logotipo Libra Design +Tech"></a>
+								</div> <!-- .col-xs-6 -->
+							</div>
+						</div> <!-- .container -->
+					</div> <!-- .site-atendimento -->
 				</div> <!-- .extra-footer -->
 			</footer>
 		</div> <!-- .site-geral -->

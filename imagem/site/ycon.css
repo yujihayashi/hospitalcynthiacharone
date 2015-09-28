@@ -1,0 +1,17 @@
+.ycon{ background:url("ycon.png") top left no-repeat; }
+.ycon-mail-lg{ width:132px; height:133px; background-position:-1px -1px; }
+.ycon-marker{ width:53px; height:70px; background-position:-1px -135px; }
+.ycon-arrow-right-white{ width:59px; height:50px; background-position:-55px -135px; }
+.ycon-arrow-left-white{ width:59px; height:50px; background-position:-1px -206px; }
+.ycon-arrow-down{ width:15px; height:32px; background-position:-115px -135px; }
+.ycon-phone-gray-sm{ width:22px; height:22px; background-position:-61px -206px; }
+.ycon-plus-white{ width:19px; height:20px; background-position:-84px -206px; }
+.ycon-plus{ width:19px; height:20px; background-position:-104px -206px; }
+.ycon-phone-gray-xs{ width:19px; height:19px; background-position:-1px -257px; }
+.ycon-mail-gray-sm{ width:23px; height:17px; background-position:-21px -257px; }
+.ycon-phone-sm{ width:16px; height:16px; background-position:-45px -257px; }
+.ycon-favicon-white{ width:16px; height:16px; background-position:-62px -257px; }
+.ycon-plus-sm{ width:15px; height:15px; background-position:-79px -257px; }
+.ycon-arrow-down-white{ width:20px; height:11px; background-position:-95px -257px; }
+.ycon-arrow-up-white{ width:20px; height:11px; background-position:-1px -277px; }
+
